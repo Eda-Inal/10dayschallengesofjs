@@ -60,3 +60,17 @@ function factorial(n) {
   }
   return n * factorial(n - 1);
 }
+
+
+/****Day 3: Arrays****/
+
+
+
+ function getSecondLargest(nums) {
+  // Complete the function
+  nums.sort(function (x, y) {
+    return y - x; //buyukten kucuge sıralandı
+  });
+  let results = [...new Set(nums)];
+  return results[1];
+}
